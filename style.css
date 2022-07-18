@@ -1,0 +1,67 @@
+:root {
+    --red: rgb(207, 19, 19);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(128, 128, 128);
+    --black: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--red);
+    color: var(--white);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+    background-color: var(--gray);
+    padding: 0.5rem 0.5rem 0.5rem 8rem;
+    font-size: 3rem;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+header ul li {
+    margin: 1.5rem;
+    border-bottom: 0.25rem solid var(--black);
+    padding: 0.5rem;
+}
+
+header ul li:hover {
+    background-color: var(--black);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.subtitle {
+    padding: 1rem;
+    background-image: url(./images/tree-g9e409b46f_1280.jpg);
+}
+
+.subtitle h2 {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--red);
+}
+
+.subtitle h2 span {
+    background-color: var(--white);
+    padding: 1rem;
+    opacity: 25%;
+}
+
+.subtitle h2 span:hover {
+    background-color: var(--white);
+    padding: 1rem;
+    opacity: 100%;
+    transition-duration: 1s;
+}
