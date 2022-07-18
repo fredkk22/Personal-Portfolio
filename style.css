@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --red: rgb(207, 19, 19);
     --white: rgb(255, 255, 255);
@@ -5,6 +6,7 @@
     --black: rgb(0, 0, 0);
 }
 
+/* Element Selectors */
 body {
     margin: 0 auto;
 }
@@ -36,12 +38,18 @@ header ul li {
     padding: 0.5rem;
 }
 
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 header ul li:hover {
     background-color: var(--black);
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
+/* Class Selectors */
 .subtitle {
     padding: 1rem;
     background-image: url(./images/tree-g9e409b46f_1280.jpg);
@@ -64,4 +72,44 @@ header ul li:hover {
     padding: 1rem;
     opacity: 100%;
     transition-duration: 1s;
+}
+
+.aboutme {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem;
+}
+
+.aboutme h3 {
+    margin: 0.5rem -.25rem 0.5rem 8rem;
+    padding: 0.5rem 0 2rem 0;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.aboutme p {
+    margin: 1rem;
+    border-left: 0.2rem solid var(--red);
+    padding: 0.25rem 0.5rem 1rem 1.5rem;
+    font-size: 1rem;
+}
+
+.work {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem;
+}
+
+.work h3 {
+    margin: 0.5rem -.25rem 0.5rem 8rem;
+    padding: 0.5rem 0 2rem 0;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.work .workgrid {
+    margin: 1rem;
+    border-left: 0.2rem solid var(--red);
+    padding: 0.25rem 0.5rem 1rem 1.5rem;
+    font-size: 1rem;
 }
