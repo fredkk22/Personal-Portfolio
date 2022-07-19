@@ -24,10 +24,14 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header h1 {
+header div {
+    display: flex;
     background-color: var(--gray);
-    margin-top: 0.5rem;
-    padding: 0.5rem 0.5rem 0.5rem 8rem;
+    margin: 1rem 0rem;
+}
+
+header h1 {
+    padding: 0.5rem 0.5rem 0.5rem 10rem;
     font-size: 3rem;
 }
 
@@ -59,7 +63,7 @@ header nav ul li:hover {
 
 /* Subtitle Section */
 .subtitle {
-    padding: 1.5rem;
+    padding: 2rem;
     background-image: url(./images/tree-g9e409b46f_1280.jpg);
 }
 
@@ -84,7 +88,6 @@ header nav ul li:hover {
 }
 
 /* All Sections */
-
 .mainsections {
     display: flex;
     flex-direction: row;
@@ -106,8 +109,8 @@ header nav ul li:hover {
 .rightcolumn {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 75%;
-    margin: 1rem;
     border-left: 0.2rem solid var(--red);
     padding: 0.25rem 0.5rem 1rem 1.5rem;
     font-size: 1.25rem;
@@ -115,18 +118,21 @@ header nav ul li:hover {
 
 
 /* About Me */
-
 .mainsections p {
     margin: 0.5rem;
     font-size: 1rem;
 }
 
-/* Work */
+.aboutmepic {
+    margin: 0.5rem;
+    border-radius: 10%;
+    width: 500px;
+}
 
+/* Work */
 .mainsections .rightcolumn figure {
-    position: relative;
     opacity: 50%;
-    max-width: 100%;
+    padding: 0.5rem;
 }
 
 .mainsections .rightcolumn figure:hover {
@@ -136,8 +142,7 @@ header nav ul li:hover {
 }
 
 .mainsections .rightcolumn figure figcaption {
-    position: absolute;
-    bottom: 2rem;
+    position: relative;
     color: var(--white);
     background-color: var(--red);
     padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -149,28 +154,34 @@ header nav ul li:hover {
 
 .mainsections .rightcolumn .mainproject {
     width: 100%;
+    font-size: 1.5rem;
+}
+
+.mainsections .rightcolumn .mainproject a {
+    text-decoration: none;
 }
 
 .mainsections .otherprojects {
     width: 50%;
-    padding: 0.5rem;
     font-size: 1rem;
 }
 
 /* Contact Me */
-
 .mainsections ul {
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .mainsections ul li a {
-    margin: 1.5rem;
+    margin: 1rem;
     border-bottom: 0.25rem solid var(--red);
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0 0 0.25rem 0;
     color: var(--black);
 }
 
@@ -181,3 +192,107 @@ header nav ul li:hover {
     transition-duration: 0.5s;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header div {
+        justify-content: center;
+        margin: 0rem;
+    }
+    header h1 {
+        padding: 1rem 0;
+    }
+    header nav ul {
+        justify-content: center;
+        margin: 0;
+    }
+    header nav ul li {
+        margin: 1rem;
+        padding: 0.25rem;
+    }
+    .mainsections {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .mainsections h3 {
+        text-align: left;
+        border-bottom: 0.2rem solid var(--red);
+    }
+    .leftcolumn {
+        width: 100%;
+    }
+    .rightcolumn {
+        border: none;
+        padding: 1rem 1rem 0 1rem;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+        justify-content: center;
+    }
+    .rightcolumn ul {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header div {
+        margin: 0rem;
+    }
+    header h1 {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    header nav ul {
+        justify-content: center;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    header nav ul li {
+        margin: 1rem;
+        padding: 0.25rem;
+    }
+    .mainsections {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .mainsections h3 {
+        text-align: left;
+        border-bottom: 0.2rem solid var(--red);
+    }
+    .leftcolumn {
+        width: 100%;
+    }
+    .rightcolumn {
+        flex-wrap: wrap;
+        border: none;
+        padding: 1rem 1rem 0 1rem;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rightcolumn ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 1.25rem;
+    }
+    .rightcolumn ul li {
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+    .mainsections .rightcolumn .mainproject {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .mainsections .rightcolumn .otherprojects {
+        width: 100%;
+    }
+
+}
