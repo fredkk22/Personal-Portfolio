@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <title>Freddy Kwak's Portfolio</title>
 </head>
@@ -41,24 +42,31 @@
     </section>
 
     <main>
-        <section class="aboutme" id="aboutme">
-            <h3>About Me</h3>
-
-            <p>
-                Hello, my name is Freddy Kwak, and I am a newly taught full stack web developer who is currently
-                taking the UPenn LPS bootcamp. I graduated with a Bachelor's degree in Communication in December of 2021
-                and plan to find a job in programming after completing this course.
-                <br>
-                <br>
-                I have never taken a course like this, but I am thoroughly studying and reviewing everything we are taught in class.
-                I am also learning how to teach myself the skills to learn programming through Google.
-            </p>
+        <section class="mainsections" id="aboutme">
+            <div class="leftcolumn">
+                <h3>About Me</h3>
+            </div>
+            <div class="rightcolumn">
+                <p>
+                    Hello, my name is Freddy Kwak, and I am a newly taught full stack web developer who is currently
+                    taking the UPenn LPS bootcamp. I graduated with a Bachelor's degree in Communication in December
+                    of 2021
+                    and plan to find a job in programming after completing this course.
+                </p>
+                <p>
+                    I have never taken a course like this, but I am thoroughly studying and reviewing everything we
+                    are taught in class.
+                    I am also learning how to teach myself the skills to learn programming through Google.
+                </p>
+            </div>
         </section>
 
-        <section id="work" class="work">
-            <h3>Work</h3>
+        <section class="mainsections" id="work">
+            <div class="leftcolumn">
+                <h3>Work</h3>
+            </div>
 
-            <div>
+            <div class="rightcolumn">
                 <figure class="mainproject">
                     <img src="./images/tree-g9e409b46f_1280.jpg" alt="Project 1">
                     <figcaption>Project 1</figcaption>
@@ -85,26 +93,29 @@
                 </figure>
             </div>
         </section>
+
+        <section class="mainsections" id="contactme">
+            <div class="leftcolumn">
+                <h3>Contact Me</h3>
+            </div>
+            <div class="rightcolumn">
+                <ul>
+                    <li>
+                        <a href="tel:+1(201)-753-0922">Phone</a>
+                    </li>
+                    <li>
+                        <a href="mailto:freddykwak123@gmail.com">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/fredkk22" target="blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/freddy-kwak-a3aa551a6/" target="blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-
-    <footer id="contactme">
-        <h3>Contact Me</h5>
-
-            <ul>
-                <li>
-                    <a href="tel:+1(201)-753-0922">Phone</a>
-                </li>
-                <li>
-                    <a href="mailto:freddykwak123@gmail.com">Email</a>
-                </li>
-                <li>
-                    <a href="https://github.com/fredkk22" target="blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/freddy-kwak-a3aa551a6/" target="blank">LinkedIn</a>
-                </li>
-            </ul>
-    </footer>
 </body>
 
 </html>
