@@ -7,7 +7,7 @@
 - [Tablet-Screenshots](#screenshots-at-tablet-size)
 - [Mobile-Screenshots](#screenshots-at-mobile-size)
 - [Credits](#credits)
-- [Link](#link)
+- [Link](#link-to-deployed-application)
 
 ## Description
 
