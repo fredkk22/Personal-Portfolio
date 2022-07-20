@@ -5,7 +5,7 @@
 - [Usage](#usage)
 - [Desktop-Screenshots](#screenshots-at-desktop-size)
 - [Tablet-Screenshots](#screenshots-at-tablet-size)
-- [Mobile-Screenshots](#screenshot-at-mobile-size)
+- [Mobile-Screenshots](#screenshots-at-mobile-size)
 - [Credits](#credits)
 - [Link](#link)
 
