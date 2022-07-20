@@ -117,6 +117,10 @@ header nav ul li:hover {
     font-size: 1.25rem;
 }
 
+.rightcolumn a {
+    text-decoration: none;
+}
+
 
 /* About Me */
 .mainsections p {
@@ -156,10 +160,6 @@ header nav ul li:hover {
 .mainsections .rightcolumn .mainproject {
     width: 100%;
     font-size: 1.5rem;
-}
-
-.mainsections .rightcolumn .mainproject a {
-    text-decoration: none;
 }
 
 .mainsections .otherprojects {
